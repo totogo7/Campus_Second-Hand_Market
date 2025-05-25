@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/tv_payment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorCyan"
+        android:gravity="center_horizontal"
+        android:text="支付订单"
+        android:textColor="@color/colorOrange"
+        android:textSize="40sp"/>
+
+    <!-- 订单金额 -->
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_payment_title"
+        android:textSize="28sp"
+        android:textColor="@color/colorRed"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"/>
+
+    <!-- 返回按钮 -->
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:textSize="22sp"
+        android:textColor="@color/colorRed"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:clickable="true"
+        android:background="?selectableItemBackground"/>
+
+    <!-- 支付方式容器 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_amount"
+        android:layout_marginTop="20dp"
+        android:layout_above="@+id/btn_confirm">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 支付宝支付 -->
+            <LinearLayout
+                android:id="@+id/layout_alipay"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="?selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_alipay"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支付宝支付"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"/>
+            </LinearLayout>
+
+            <!-- 微信支付 -->
+            <LinearLayout
+                android:id="@+id/layout_wechat"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="?selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_wechat_pay"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信支付"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"/>
+            </LinearLayout>
+
+            <!-- 银行卡支付 -->
+            <LinearLayout
+                android:id="@+id/layout_bank"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="?selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_bank_card"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="银行卡支付"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 确认支付按钮 -->
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="确认支付"
+        android:textSize="24sp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorGreen"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+
+
+</RelativeLayout>

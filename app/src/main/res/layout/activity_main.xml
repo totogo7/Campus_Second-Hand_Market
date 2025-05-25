@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 顶部标题 -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="@color/colorCyan"
+        android:gravity="center_horizontal"
+        android:text="建大二手集市"
+        android:textColor="@color/colorOrange"
+        android:textSize="40sp" />
+
+    <!-- 刷新按钮 -->
+    <TextView
+        android:id="@+id/tv_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="12dp"
+        android:text="刷新"
+        android:textColor="@color/colorRed"
+        android:textSize="22sp" />
+
+    <!-- 学号显示 -->
+    <TextView
+        android:id="@+id/tv_student_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="italic" />
+
+    <!-- 分类图标 -->
+    <ImageButton
+        android:id="@+id/ib_learning_use"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/tv_student_number"
+        android:layout_marginStart="15dp"
+        android:background="@color/colorWhite"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_learning_use" />
+
+    <ImageButton
+        android:id="@+id/ib_electric_product"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/tv_student_number"
+        android:layout_marginStart="110dp"
+        android:background="@color/colorWhite"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_electric_prodduct" />
+
+    <ImageButton
+        android:id="@+id/ib_daily_use"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/tv_student_number"
+        android:layout_marginStart="205dp"
+        android:background="@color/colorWhite"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_daily_use" />
+
+    <ImageButton
+        android:id="@+id/ib_sports_good"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/tv_student_number"
+        android:layout_marginStart="310dp"
+        android:background="@color/colorWhite"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_sports_good" />
+
+    <!-- 分类文字 -->
+    <TextView
+        android:id="@+id/tv_learning_use"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/ib_learning_use"
+        android:layout_marginStart="15dp"
+        android:text="学习用品"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_electric_product"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/ib_electric_product"
+        android:layout_marginStart="110dp"
+        android:text="电子用品"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_daily_use"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/ib_daily_use"
+        android:layout_marginStart="205dp"
+        android:text="生活用品"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_sports_good"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/ib_sports_good"
+        android:layout_marginStart="310dp"
+        android:text="体育用品"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- 商品列表 -->
+
+    <!-- 分隔线 -->
+
+    <ListView
+        android:id="@+id/lv_all_commodity"
+        android:layout_width="match_parent"
+        android:layout_height="506dp"
+        android:layout_above="@+id/view2"
+        android:layout_below="@+id/tv_electric_product"
+        android:layout_marginTop="-2dp"
+        android:layout_marginBottom="6dp" />
+
+<!--    <View-->
+<!--        android:id="@+id/view1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="7dp"-->
+<!--        android:layout_above="@+id/view2"-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:background="@color/colorBlack" />-->
+
+    <!-- 底部导航栏 -->
+    <ImageButton
+        android:id="@+id/ib_home_page"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/tv_home_page"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/icon_home_page" />
+
+<!--    <View-->
+<!--        android:id="@+id/view2"-->
+<!--        android:layout_width="2dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_above="@+id/view4"-->
+<!--        android:layout_marginStart="100dp"-->
+<!--        android:background="@color/colorBlack" />-->
+
+    <ImageButton
+        android:id="@+id/ib_add_product"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/tv_add_product"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="-4dp"
+        android:src="@drawable/icon_add_product" />
+
+<!--    <View-->
+<!--        android:id="@+id/view3"-->
+<!--        android:layout_width="2dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_above="@+id/view4"-->
+<!--        android:layout_marginStart="190dp"-->
+<!--        android:background="@color/colorBlack" />-->
+
+    <!-- 新增我的收藏按钮 -->
+    <ImageButton
+        android:id="@+id/ib_my_collection"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/tv_my_collection"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_favorite_border" />
+
+<!--    <View-->
+<!--        android:id="@+id/view5"-->
+<!--        android:layout_width="2dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_above="@+id/view4"-->
+<!--        android:layout_marginStart="270dp"-->
+<!--        android:background="@color/colorBlack" />-->
+
+    <ImageButton
+        android:id="@+id/ib_personal_center"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/tv_personal_center"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/icon_personal_center" />
+
+    <!-- 底部文字 -->
+    <TextView
+        android:id="@+id/tv_home_page"
+        android:layout_width="35dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/view4"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="5dp"
+        android:text="首页"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_add_product"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/view4"
+        android:layout_marginStart="115dp"
+        android:layout_marginBottom="5dp"
+        android:text="发布闲置"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_my_collection"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/view4"
+        android:layout_marginStart="210dp"
+        android:layout_marginBottom="5dp"
+        android:text="我的收藏"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_personal_center"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/view4"
+        android:layout_marginStart="300dp"
+        android:layout_marginBottom="5dp"
+        android:text="个人中心"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <!-- 底部边线 -->
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlack" />
+</RelativeLayout>

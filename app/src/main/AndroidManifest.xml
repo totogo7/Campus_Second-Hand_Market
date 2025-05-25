@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 网络请求 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="校园闲置"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity android:name=".MyCollectionActivity"></activity>
+        <activity android:name=".CommodityTypeActivity" />
+        <activity android:name=".MyCommodityActivity" />
+        <activity android:name=".ModifyInfoActivity" />
+        <activity android:name=".MyInfoActivity" />
+        <activity android:name=".CommodityDetailActivity" />
+        <activity android:name=".ModifyPwdActivity" />
+        <activity android:name=".PersonalCenterActivity" />
+        <activity android:name=".AddCommodityActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".PaymentActivity"/>
+        <activity android:name=".LoginActivity">
+
+
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- 预置图片选项 -->
+    <ImageView
+        android:id="@+id/iv_image1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/icon_take_photo"
+        android:layout_margin="7dp"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:id="@+id/iv_image2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/icon_learning_use"
+        android:layout_margin="7dp"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/iv_image3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/icon_electric_prodduct"
+        android:layout_margin="7dp"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/iv_image4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/icon_sports_good"
+        android:layout_margin="7dp"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/iv_image5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/icon_daily_use"
+        android:layout_margin="7dp"
+        android:scaleType="centerCrop"/>
+
+    <!-- 添加更多预置图片 -->
+
+</LinearLayout>

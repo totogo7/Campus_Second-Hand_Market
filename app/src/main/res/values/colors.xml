@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBlue">#dbe2ef</color>
+    <color name="colorBlueDark">#112d4e</color>
+    <color name="colorBlueLight">#11999e</color>
+    <color name="colorGreenLight">#bbded6</color>
+    <color name="colorBlack">#212121</color>
+    <color name="colorGray">#757575</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrayDark">#BDBDBD</color>
+    <color name="colorGreen">#a8e6cf</color>
+    <color name="colorRed">#E49D9D</color>
+    <color name="colorBrown">#d6e6f2</color>
+    <color name="colorOrange">#F4D34F</color>
+    <color name="colorPurple">#c3bef0</color>
+    <color name="colorCyan">#D7EFEA</color>
+    <color name="colorYellow">#ffde7d</color>
+    <color name="selected_payment_bg">#E3F2FD</color>
+    <color name="colorPrimary">#2196F3</color>
+
+</resources>
